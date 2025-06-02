@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 def fetch_page():
+    #PREÇO DE UM TABLETE
     url = "https://www.mercadolivre.com.br/tablet-samsung-galaxy-tab-s6-lite-wi-fi-64gb-4gb-ram-tela-104-cinza-sm-p620nzadzto/p/MLB35330751?pdp_filters=deal%3AMLB779362-1#polycard_client=homes-korribanSearchTodayPromotions&searchVariation=MLB35330751&wid=MLB5041324376&position=2&search_layout=grid&type=product&tracking_id=dbdb5e2f-1cb8-435a-bc41-35ada47761b7&sid=search&c_id=/home/today-promotions-recommendations/element&c_uid=c7b15147-6bc7-4505-8e0d-932441e11765"
     response = requests.get(url)
     return response.text
